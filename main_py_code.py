@@ -73,7 +73,7 @@ class MainWindow(QtWidgets.QMainWindow):
         self.show()
 
     def connect_DB(self):
-        # Replace these connection parameters with your actual database credentials
+        # You have to replace these connection parameters(info do connexion) with your actual database credentials
         self.conn = psycopg2.connect(database="l3info_40", user="l3info_40", host="10.11.11.22", password="L3INFO_40")
         self.cursor = self.conn.cursor()
 
